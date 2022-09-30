@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>College Notice Board</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg sticky-top mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="logo.jfif" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active p-2 p-lg-3" aria-current="page" href="notice.html"><h4>Home</h4></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3" href="pdf.html"><h4>Notices</h4></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <p>College Notice Board</p>
+    </div>
+    <br><br>
+    <!-- (A) ADD/UPDATE NOTE -->
+<div class="container m-3 text-align-center">
+    <div id="noteform" class="mx-auto">
+        <div class="input-group flex-nowrap w-100">
+            <input type="text" class="form-control mb-3 w-50 center-block" placeholder="Notice"
+                aria-describedby="addon-wrapping" type="text" id="notetxt" required disabled>
+        </div>        
+    </div>
+    <a class="btn rounded-pill main-btn position-relative start-50" type="submit" id="notego" value="Add" disabled href="#">Submit notice</a>
+</div>
+
+    <!-- (B) NOTICE BOARD -->
+    <div class="m-5" id="board"></div>
+
+    <!-- (C) SIMPLE INSTRUCTIONS
+    Enter text and "add" to create a new note.
+    Drag-and-drop a note to rearrange.
+    Double click on a note to edit.
+    Hover over a note and click on "X" to delete it.
+    -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="notice-board.js"></script>
+</body>
+
+</html>

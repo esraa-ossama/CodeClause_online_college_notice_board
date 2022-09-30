@@ -1,0 +1,133 @@
+:root {
+  --green-color: #0c5e10;
+  --yellow-color: #ffc400;
+}
+
+/*start nav*/
+.navbar {
+  background-color: var(--green-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--yellow-color);
+}
+
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+
+.logo {
+  width: 8%;
+  height: 8%
+}
+
+/*end nav*/
+
+p {
+    text-align: center;
+    font-size: 5rem;
+    color: #ecf1efc4;
+}
+
+body {
+  /* padding: 20px; */
+  font-family: "Roboto", sans-serif;;
+  margin: 0;
+  background:url(https://www.bing.com/th/id/OIP.rZZqZNaNRD-lCCcVEiOx8gHaEf?pid=ImgDet&rs=1);
+}
+
+/* (B) ADD NEW NOTE */
+#noteform {
+  display: flex;
+  margin-bottom: 20px;
+}
+.main-btn {
+  background-color: var(--green-color);
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+}
+
+.main-btn:hover {
+  background-color: var(--yellow-color);
+}
+
+/* (C) NOTICE BOARD WRAPPER */
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* (D) NOTES */
+div.note {
+  position: relative;
+  padding: 15px;
+  border: 2px solid #fdff8a;
+  background: #f0f0dd;
+  box-shadow: 9px 11px 11px -2px rgba(0,0,0,0.4);
+}
+
+/* (E) DELETE BUTTON */
+div.note .del {
+  position: absolute;
+  top: 5px; right: 5px;
+  color: #ff5a5a;
+  font-size: 20px;
+  font-weight: 700;
+  display: none;
+}
+div.note:hover .del { display: block; }
+
+/* (F) EDIT NOTE */
+div.note .txt input {
+  padding: 5px;
+  border: 0;
+  background: #fff;
+}
+div.note .txt input:focus { outline-width: 0; }
+
+/* (G) LOCK DRAG & DELETE WHEN EDITING */
+#board div.lock {
+  pointer-events: none;
+  color: #818181;
+  border: 1px solid #d3d3d3;
+  background: #d3d3d3;
+}
+#board div.lock .del { display: none; }
+
+/* (H) PREVENT DRAG LEAVE EVENT ON NOTE CHILD ELEMENTS */
+#board div.drag .txt, #board div.drag .del { pointer-events: none; }
+#board div.drag .del { display: none; }
+
+/* (I) DRAG HIGHLIGHT */
+#board div.hint {
+  border: 2px dashed #ff8e68;
+  background: #feffc5;
+}
+#board div.active {
+  border: 2px dashed #ff0000;
+  background: #fcff00;
+}
+
+.info {
+  color: rgb(2, 71, 5);
+}
+.info:hover {
+  color: rgb(14, 9, 91);
+}

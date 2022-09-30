@@ -1,0 +1,118 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+    --light-purple: #741170;
+    --dark-purple: #5a1a5f;
+    --grey-color: #ede7ed;
+
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+    background-color: var(--yellow-color);
+    color: var(--light-purple);
+}
+
+.text h1 {
+    font-weight: bold;
+    color: var(--dark-purple);
+}
+
+/* Start navbar */
+.navbar {
+    background-color: var(--light-purple);
+}
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--yellow-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+
+/* End navbar */
+
+/* Start About */
+.About {
+    background-color: #f6edf6;
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--yellow-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.About .description {
+    max-width: 500px;
+}
+
+.About .main-title .bank-building {
+    width: 80px;
+    height: 80px;
+    color: rgb(205, 203, 205);
+}
+/* End About */
+
+/* Start footer */
+.footer {
+    background-color: var(--light-purple);
+}
+
+.footer .copyright div span {
+    color: var(--yellow-color);
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.footer .twitter {
+    background-color: #1da1f2;
+}
+
+.footer .linkedin {
+    background-color: #0077b5;
+}
+
+.footer .youtube {
+    background-color: #ff0000;
+}
+/* End footer */
